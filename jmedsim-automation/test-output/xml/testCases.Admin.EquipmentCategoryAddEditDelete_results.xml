@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Admin - Equipment Category - Add/Edit/Delete"
+           tests="1"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="33.678">
+  <properties />
+            <testcase name="execute" time="33.678" classname="testCases.Admin.EquipmentCategoryAddEditDelete">
+                <failure type="java.lang.AssertionError"
+                  message="Validate URL changed to https://nat-p12.tatrc.org/JMedSim_Test/EquipmentCategories/Index expected [true] but found [false]"
+              >
+<![CDATA[java.lang.AssertionError: Validate URL changed to https://nat-p12.tatrc.org/JMedSim_Test/EquipmentCategories/Index expected [true] but found [false]
+  org.testng.Assert.fail(Assert.java:93)
+  org.testng.Assert.failNotEquals(Assert.java:512)
+  org.testng.Assert.assertTrue(Assert.java:41)
+  pageFactories.MenusPageFactory.<init>(MenusPageFactory.java:38)
+  pageFactories.IndexBase.<init>(IndexBase.java:30)
+  pageFactories.Admin.EquipmentCategoryPages.EquipmentCategoryPageFactory.<init>(EquipmentCategoryPageFactory.java:24)
+  testCases.Admin.EquipmentCategoryAddEditDelete.execute(EquipmentCategoryAddEditDelete.java:66)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+  java.lang.Thread.run(Unknown Source)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+  
+</testsuite>

@@ -1,0 +1,331 @@
+<html>
+<head>
+<title>TestNG:  Validate Menus For Admin</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Validate Menus For Admin</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 17 07:37:59 EST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>63 seconds (63990 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.ValidateMenusForAdmin.test()'><b>test</b><br>Test class: testCases.ValidateMenusForAdmin<br>Parameters: scott_DHA_system_admin@mail.mil<br/>
+<a href="#Output-1210776224" onClick='toggleBox("Output-1210776224", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1210776224" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1210776224">
+Logged in as user: scott_DHA_system_admin@mail.mil<br/>
+<br><br/>
+<b>Class: <u>modularScripts.LoginMod</u></b><br/>
+<br><br/>
+Method: execute<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Validating Login Page Title<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Log in<br/>
+<br><br/>
+Method: clickOkInDODBanner<br/>
+<br/>
+Method: setEmail<br/>
+<br/>
+Method: setPassword<br/>
+<br/>
+Method: clickLogin<br/>
+<br/>
+Writing value '2018/12/17 07.38.08' to worksheet 'Name: /xl/worksheets/sheet1.xml - Content Type: application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml' in column index '6'...<br/>
+Excel file updated<br/>
+Waiting for page to load completely...<br/>
+The page 'JMedSIM - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readPageHeader<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Unknown<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> JMedSIM<br/>
+<br><br/>
+Method: clickSimulationInMyMenu<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Simulations - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Unknown<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Simulations<br/>
+<br><br/>
+Method: clickHomeLogo<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'JMedSIM - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: clickUsersAndRolesInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Users & Roles - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Unknown<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Users & Roles<br/>
+<br><br/>
+Method: clickLockedAccountsInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Locked Accounts - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Unknown<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Locked Accounts<br/>
+<br><br/>
+Method: clickSitesInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Sites - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Unknown<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Sites<br/>
+<br><br/>
+Method: clickEquipmentCategoryInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Equipment Category - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Unknown<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Equipment Category<br/>
+<br><br/>
+Method: clickTargetedLearnerInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Targeted Learner - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Unknown<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Targeted Learner<br/>
+<br><br/>
+Method: clickServiceRoleInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Service Role - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Unknown<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Service Role<br/>
+<br><br/>
+Method: clickTrainingTypeInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Training Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Unknown<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Training Type<br/>
+<br><br/>
+Method: clickLearnerProfileInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Learner Profile - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Unknown<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Learner Profile<br/>
+<br><br/>
+Method: clickPersonnelInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Personnel - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Unknown<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Personnel<br/>
+<br><br/>
+Method: clickContentInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Content - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Unknown<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Content<br/>
+<br><br/>
+Method: clickContentTypeInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Content Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Unknown<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Content Type<br/>
+<br><br/>
+Method: clickMetadataInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Metadata - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Unknown<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Metadata<br/>
+<br><br/>
+Method: clickMetadataCategoryInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Metadata Category - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Unknown<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Metadata Category<br/>
+<br><br/>
+Method: clickSimulatorInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Simulator - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Unknown<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Simulator<br/>
+<br><br/>
+Method: clickSimulatorCategoryInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Simulator Category - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Unknown<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Simulator Category<br/>
+<br><br/>
+Method: clickAuditLogInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Index - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Unknown<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Index<br/>
+<br><br/>
+Method: clickHomeLogo<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'JMedSIM - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: clickProfileInHelloUser<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Edit Your User Profile - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Unknown<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Edit Your User Profile<br/>
+<br><br/>
+Method: clickManageAccountInHelloUser<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>63</td>
+<td>testCases.ValidateMenusForAdmin@1a1d6a08</td></tr>
+</table><p>
+</body>
+</html>

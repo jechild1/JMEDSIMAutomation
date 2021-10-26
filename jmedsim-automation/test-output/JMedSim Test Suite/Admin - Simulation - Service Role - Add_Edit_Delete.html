@@ -1,0 +1,198 @@
+<html>
+<head>
+<title>TestNG:  Admin - Simulation - Service Role - Add/Edit/Delete</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Admin - Simulation - Service Role - Add/Edit/Delete</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 07 08:14:41 EST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>48 seconds (48093 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.Admin.Simulation.ServiceRoleAddEditDelete.execute()'><b>execute</b><br>Test class: testCases.Admin.Simulation.ServiceRoleAddEditDelete<br>Parameters: jesse_DHA_super_user@mail.mil<br/>
+<a href="#Output-384721657" onClick='toggleBox("Output-384721657", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-384721657" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-384721657">
+<br><br/>
+<b>Class: <u>modularScripts.LoginMod</u></b><br/>
+<br><br/>
+Method: execute<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Validating Login Page Title<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Log in<br/>
+<br><br/>
+Method: clickOkInDODBanner<br/>
+<br/>
+Method: setEmail<br/>
+<br/>
+Method: setPassword<br/>
+<br/>
+Method: clickLogin<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+Writing value '2019/11/07 08.14.49' to worksheet 'Name: /xl/worksheets/sheet1.xml - Content Type: application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml' in column index '8'...<br/>
+Excel file updated<br/>
+Waiting for page to load completely...<br/>
+The page 'JMedSIM - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: clickServiceRoleInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Service Role - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: setSearchBy<br/>
+<br/>
+Method: clickSearch<br/>
+<br/>
+Beginning read for column 'Service Role' where primary column header is 'Service Role' and primary column value is 'Medical Commander' on page 1.<br/>
+Method: clickCreateNewServiceRole<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Create New Service Role - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readServiceCodeErrorMessage<br/>
+<br/>
+Method: readServiceRoleErrorMessage<br/>
+<br/>
+Method: setServiceCode<br/>
+<br/>
+Method: setServiceRole<br/>
+<br/>
+Method: readServiceCodeErrorMessage<br/>
+<br/>
+Method: readServiceRoleErrorMessage<br/>
+<br/>
+Method: setServiceCode<br/>
+<br/>
+Method: setServiceRole<br/>
+<br/>
+Method: readServiceCodeErrorMessage<br/>
+<br/>
+Method: readServiceRoleErrorMessage<br/>
+<br/>
+Method: clearServiceCode<br/>
+<br/>
+Method: clearServiceRole<br/>
+<br/>
+Method: setServiceCode<br/>
+<br/>
+Method: setServiceRole<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Service Role - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: gotoTablePageWithRow<br/>
+<br/>
+Method: gotoFirstTablePage<br/>
+<br/>
+Beginning isRowInTable search for '000A7' in column 'Service Code'.<br/>
+Beginning isRowInTable search for '000A7' in column 'Service Code'.<br/>
+Beginning read for column 'Service Code' where primary column header is 'Service Code' and primary column value is '000A7' on page 2.<br/>
+Beginning read for column 'Service Role' where primary column header is 'Service Code' and primary column value is '000A7' on page 2.<br/>
+Beginning link click for row 000A7 and link title Delete.<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Method: clickSkipToPreviousNavigationLink<br/>
+<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Method: clickSkipToNextNavigationLink<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Link Delete clicked for row 000A7.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Delete Service Role - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readServiceCode<br/>
+<br/>
+Method: readServiceRole<br/>
+<br/>
+Method: clickDelete<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>testCases.Admin.Simulation.ServiceRoleAddEditDelete@22fcf7ab</td></tr>
+</table><p>
+</body>
+</html>

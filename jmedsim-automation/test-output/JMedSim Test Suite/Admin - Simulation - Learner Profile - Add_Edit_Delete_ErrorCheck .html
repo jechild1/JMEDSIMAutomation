@@ -1,0 +1,246 @@
+<html>
+<head>
+<title>TestNG:  Admin - Simulation - Learner Profile - Add/Edit/Delete/ErrorCheck </title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Admin - Simulation - Learner Profile - Add/Edit/Delete/ErrorCheck </h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu May 09 10:36:11 EDT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>132 seconds (132778 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.Admin.Simulation.LearnerProfileAddEditDelete.execute()'><b>execute</b><br>Test class: testCases.Admin.Simulation.LearnerProfileAddEditDelete<br>Parameters: DHASuperUser@mail.mil<br/>
+<a href="#Output-957486195" onClick='toggleBox("Output-957486195", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-957486195" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-957486195">
+<br><br/>
+<b>Class: <u>modularScripts.LoginMod</u></b><br/>
+<br><br/>
+Method: execute<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Validating Login Page Title<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Log in<br/>
+<br><br/>
+Method: clickOkInDODBanner<br/>
+<br/>
+Method: setEmail<br/>
+<br/>
+Method: setPassword<br/>
+<br/>
+Method: clickLogin<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+Writing value '2019/05/09 10.36.20' to worksheet 'Name: /xl/worksheets/sheet1.xml - Content Type: application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml' in column index '6'...<br/>
+Excel file updated<br/>
+Waiting for page to load completely...<br/>
+The page 'JMedSIM - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: clickLearnerProfileInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Learner Profile - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: setSearchBy<br/>
+<br/>
+Method: clickSearch<br/>
+<br/>
+Method: gotoTablePageWithRow<br/>
+<br/>
+Method: gotoFirstTablePage<br/>
+<br/>
+Beginning isRowInTable search for 'Doctor' in column 'Learner Profile'.<br/>
+Beginning link click for row Doctor and link title Details.<br/>
+Link Details clicked for row Doctor.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Learner Profile Details - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readLearnerProfile<br/>
+<br/>
+Method: isActiveChecked<br/>
+<br/>
+Method: clickBackToList<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Learner Profile - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: gotoTablePageWithRow<br/>
+<br/>
+Method: gotoFirstTablePage<br/>
+<br/>
+Beginning isRowInTable search for 'Doctor' in column 'Learner Profile'.<br/>
+Beginning link click for row Doctor and link title Edit.<br/>
+Link Edit clicked for row Doctor.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Edit Learner Profile - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readLearnerProfile<br/>
+<br/>
+Method: isActiveChecked<br/>
+<br/>
+Method: clickBackToList<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Learner Profile - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: clickCreateNewLearnerProfile<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Create New Learner Profile - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: clearLearnerProfile<br/>
+<br/>
+Method: readLearnerProfileErrorMessage<br/>
+<br/>
+Method: setLearnerProfile<br/>
+<br/>
+Method: setActiveCheckbox<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Learner Profile - JMedSim' is fully loaded now.<br/>
+<br/>
+Beginning read for 'Learner Profile' where primary column is 'Learner Profile' and primary column value is 'New Learner Profile.<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Beginning read for 'Learner Profile' where primary column is 'Learner Profile' and primary column value is 'New Learner Profile.<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Method: clickSkipToNextNavigationLink<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Beginning read for 'Learner Profile' where primary column is 'Learner Profile' and primary column value is 'New Learner Profile.<br/>
+Beginning isRowInTable search for .*New Learner Profile.*.<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Method: clickSkipToPreviousNavigationLink<br/>
+<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Method: clickSkipToNextNavigationLink<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Table search completed for .*New Learner Profile.* and Row Found = true after searching through 2pages.<br/>
+<br/>
+Beginning link click for row New Learner Profile and link title Edit.<br/>
+Link Edit clicked for row New Learner Profile.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Edit Learner Profile - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: setLearnerProfile<br/>
+<br/>
+Method: setActiveCheckbox<br/>
+<br/>
+Method: clickSave<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Learner Profile - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: gotoTablePageWithRow<br/>
+<br/>
+Method: gotoFirstTablePage<br/>
+<br/>
+Beginning isRowInTable search for 'Edited New Learner Profile' in column 'Learner Profile'.<br/>
+Beginning isRowInTable search for 'Edited New Learner Profile' in column 'Learner Profile'.<br/>
+Beginning read for 'Learner Profile' where primary column is 'Learner Profile' and primary column value is 'Edited New Learner Profile.<br/>
+Beginning link click for row Edited New Learner Profile and link title Delete.<br/>
+Link Delete clicked for row Edited New Learner Profile.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Delete Learner Profile - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readLearnerProfile<br/>
+<br/>
+Method: isActiveChecked<br/>
+<br/>
+Method: clickDelete<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Learner Profile - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: clickLogOffInHelloUser<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>132</td>
+<td>testCases.Admin.Simulation.LearnerProfileAddEditDelete@5c90e579</td></tr>
+</table><p>
+</body>
+</html>

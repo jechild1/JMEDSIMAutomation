@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Admin - Simulation - Simulator Software Version/OS - Add/Edit/Delete/ErrorCheck"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="102.122">
+  <properties />
+  
+  
+            <testcase name="execute" time="102.122" classname="testCases.Admin.Simulation.SimulatorSoftwareVersionOSAddEditDelete" />
+      
+</testsuite>

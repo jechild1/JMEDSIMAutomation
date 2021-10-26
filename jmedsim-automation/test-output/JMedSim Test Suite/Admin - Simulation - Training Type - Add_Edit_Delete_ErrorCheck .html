@@ -1,0 +1,235 @@
+<html>
+<head>
+<title>TestNG:  Admin - Simulation - Training Type - Add/Edit/Delete/ErrorCheck </title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Admin - Simulation - Training Type - Add/Edit/Delete/ErrorCheck </h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu May 09 10:34:24 EDT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>107 seconds (107139 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.Admin.Simulation.TrainingTypeAddEditDelete.execute()'><b>execute</b><br>Test class: testCases.Admin.Simulation.TrainingTypeAddEditDelete<br>Parameters: scott_DHA_super_user@mail.mil<br/>
+<a href="#Output-866419122" onClick='toggleBox("Output-866419122", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-866419122" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-866419122">
+<br><br/>
+<b>Class: <u>modularScripts.LoginMod</u></b><br/>
+<br><br/>
+Method: execute<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Validating Login Page Title<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Log in<br/>
+<br><br/>
+Method: clickOkInDODBanner<br/>
+<br/>
+Method: setEmail<br/>
+<br/>
+Method: setPassword<br/>
+<br/>
+Method: clickLogin<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+Writing value '2019/05/09 10.34.32' to worksheet 'Name: /xl/worksheets/sheet1.xml - Content Type: application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml' in column index '6'...<br/>
+Excel file updated<br/>
+Waiting for page to load completely...<br/>
+The page 'JMedSIM - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: clickTrainingTypeInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Training Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: setSearchBy<br/>
+<br/>
+Method: clickSearch<br/>
+<br/>
+Beginning link click for row Task Training and link title Details.<br/>
+Link Details clicked for row Task Training.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Training Type Details - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readTrainingType<br/>
+<br/>
+Method: isActiveChecked<br/>
+<br/>
+Method: clickBackToList<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Training Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: gotoTablePageWithRow<br/>
+<br/>
+Method: gotoFirstTablePage<br/>
+<br/>
+Beginning isRowInTable search for 'Task Training' in column 'Training Type'.<br/>
+Beginning link click for row Task Training and link title Edit.<br/>
+Link Edit clicked for row Task Training.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Edit Training Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readTrainingType<br/>
+<br/>
+Method: isActiveChecked<br/>
+<br/>
+Method: clickBackToList<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Training Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: clickCreateNewTrainingType<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Create New Training Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readTrainingTypeErrorMessage<br/>
+<br/>
+Method: setTrainingType<br/>
+<br/>
+Method: readTrainingTypeErrorMessage<br/>
+<br/>
+Method: setTrainingType<br/>
+<br/>
+Method: setActiveCheckbox<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Training Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: gotoTablePageWithRow<br/>
+<br/>
+Method: gotoFirstTablePage<br/>
+<br/>
+Beginning isRowInTable search for 'New Training Type' in column 'Training Type'.<br/>
+Beginning read for 'Training Type' where primary column is 'Training Type' and primary column value is 'New Training Type.<br/>
+Beginning link click for row New Training Type and link title Edit.<br/>
+Link Edit clicked for row New Training Type.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Edit Training Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: setTrainingType<br/>
+<br/>
+Method: setActiveCheckbox<br/>
+<br/>
+Method: clickSave<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Training Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: gotoTablePageWithRow<br/>
+<br/>
+Method: gotoFirstTablePage<br/>
+<br/>
+Beginning isRowInTable search for 'Edited Training Type' in column 'Training Type'.<br/>
+Beginning read for 'Training Type' where primary column is 'Training Type' and primary column value is 'Edited Training Type.<br/>
+Beginning link click for row Edited Training Type and link title Delete.<br/>
+Link Delete clicked for row Edited Training Type.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Delete Training Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readTrainingType<br/>
+<br/>
+Method: isActiveChecked<br/>
+<br/>
+Method: clickDelete<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Training Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Beginning isRowInTable search for .*Edited Training Type.*.<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Table search completed for .*Edited Training Type.* and Row Found = false after searching through 2pages.<br/>
+<br/>
+Method: clickLogOffInHelloUser<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>106</td>
+<td>testCases.Admin.Simulation.TrainingTypeAddEditDelete@3af9c5b7</td></tr>
+</table><p>
+</body>
+</html>

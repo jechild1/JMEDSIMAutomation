@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Admin - Simulation - Learner Profile - Add/Edit/Delete/ErrorCheck"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="105.906">
+  <properties />
+  
+  
+            <testcase name="execute" time="105.906" classname="testCases.Admin.Simulation.LearnerProfileAddEditDelete" />
+      
+</testsuite>

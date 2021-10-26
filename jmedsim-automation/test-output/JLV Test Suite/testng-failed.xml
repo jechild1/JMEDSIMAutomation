@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [JLV Test Suite]" parallel="classes">
+  <parameter name="selectedBrowser" value="edge"/>
+  <listeners>
+    <listener class-name="configuration.EnhancedHTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="1" name="Validate Errors on Login Page(failed)" parallel="classes">
+    <classes>
+      <class name="testCases.ValidateErrorLoginTypes">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="execute" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- testCases.ValidateErrorLoginTypes -->
+    </classes>
+  </test> <!-- Validate Errors on Login Page(failed) -->
+</suite> <!-- Failed suite [JLV Test Suite] -->

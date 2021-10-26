@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Admin - Simulation - Node Connector - Add/Edit/Delete/ErrorCheck</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <link href="custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Admin - Simulation - Node Connector - Add/Edit/Delete/ErrorCheck</h1>
+<p>
+  Test duration: 48.524s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">testCases.Admin.Simulation.NodeConnectorAddEditDelete</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  execute
+      </td>
+  <td class="duration">
+    47.683s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"jesse_DHA_system_admin@mail.mil"</span><br />
+    
+            <div class="testOutput">
+                        &lt;br&gt;<br />
+                                &lt;b&gt;Class: &lt;u&gt;modularScripts.LoginMod&lt;/u&gt;&lt;/b&gt;<br />
+                                &lt;br&gt;<br />
+                                Method: execute<br />
+                                <br />
+                                Method: readPageTitle<br />
+                                <br />
+                                &lt;b style=&apos;color:green;&apos;&gt;Validation:&lt;/b&gt; Validating Login Page Title<br />
+                                &lt;br&gt;<br />
+                                &lt;b style=&apos;color:green;&apos;&gt;Matches:&lt;/b&gt; Log in<br />
+                                &lt;br&gt;<br />
+                                Method: clickOkInDODBanner<br />
+                                <br />
+                                Method: setEmail<br />
+                                <br />
+                                Method: setPassword<br />
+                                <br />
+                                Method: clickLogin<br />
+                                <br />
+                                Method: readPageTitle<br />
+                                <br />
+                                Method: readPageTitle<br />
+                                <br />
+                                Writing value &apos;2019/11/07 08.24.06&apos; to worksheet &apos;Name: /xl/worksheets/sheet1.xml - Content Type: application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml&apos; in column index &apos;8&apos;...<br />
+                                Excel file updated<br />
+                                Waiting for page to load completely...<br />
+                                The page &apos;JMedSIM - JMedSim&apos; is fully loaded now.<br />
+                                <br />
+                                Method: clickNodeConnectorInAdmin<br />
+                                <br />
+                                Waiting for page to load completely...<br />
+                                The page &apos;Node Connector - JMedSim&apos; is fully loaded now.<br />
+                                <br />
+                                Method: setSearchBy<br />
+                                <br />
+                                Method: clickSearch<br />
+                                <br />
+                                Beginning read for column &apos;Node Connector&apos; where primary column header is &apos;Node Connector&apos; and primary column value is &apos;Straight&apos; on page 1.<br />
+                                Method: clearSearchBy<br />
+                                <br />
+                                Method: clickSearch<br />
+                                <br />
+                                Beginning link click for row Straight and link title Details.<br />
+                                Method: isSkipToPreviousNavigationPresent<br />
+                                <br />
+                                Method: isSkipToNextNavigationPresent<br />
+                                <br />
+                                Link Details clicked for row Straight.<br />
+                                <br />
+                                Waiting for page to load completely...<br />
+                                The page &apos;Node Connector Details - JMedSim&apos; is fully loaded now.<br />
+                                <br />
+                                Method: readNodeConnector<br />
+                                <br />
+                                Method: isActiveChecked<br />
+                                <br />
+                                Method: clickNodeConnectorInAdmin<br />
+                                <br />
+                                Waiting for page to load completely...<br />
+                                The page &apos;Node Connector - JMedSim&apos; is fully loaded now.<br />
+                                <br />
+                                Method: clickCreateNewNodeConnector<br />
+                                <br />
+                                Waiting for page to load completely...<br />
+                                The page &apos;Create New Node Connector - JMedSim&apos; is fully loaded now.<br />
+                                <br />
+                                Method: clearNodeConnector<br />
+                                <br />
+                                Method: setNodeConnector<br />
+                                <br />
+                                Method: readNodeConnectorErrorMessage<br />
+                                <br />
+                                Method: clearNodeConnector<br />
+                                <br />
+                                Method: readNodeConnectorErrorMessage<br />
+                                <br />
+                                Method: clearNodeConnector<br />
+                                <br />
+                                Method: setNodeConnector<br />
+                                <br />
+                                Method: readNodeConnectorErrorMessage<br />
+                                <br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Errors - Node Connector Already Exists expected [Connector Type already exists.] but found []</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.Assert.fail(Assert.java:93)<br />
+              org.testng.Assert.failNotEquals(Assert.java:512)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:134)<br />
+              org.testng.Assert.assertEquals(Assert.java:115)<br />
+              org.testng.Assert.assertEquals(Assert.java:189)<br />
+              testCases.Admin.Simulation.NodeConnectorAddEditDelete.performErrorValidation(NodeConnectorAddEditDelete.java:261)<br />
+              testCases.Admin.Simulation.NodeConnectorAddEditDelete.execute(NodeConnectorAddEditDelete.java:93)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:661)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)<br />
+              java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)<br />
+              java.lang.Thread.run(Unknown Source)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  
+</body>
+</html>

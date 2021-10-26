@@ -1,0 +1,241 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="JMedSim Test Suite" parallel="classes"
+	thread-count="1" verbose="1" group-by-instances="true">
+	<parameter name="selectedBrowser" value="firefox" />
+	<listeners>
+		<listener class-name="configuration.EnhancedHTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+
+	<test name="Login test users about to expire"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.LoginUsersWhoAreAboutToExpire" />
+		</classes>
+	</test>
+
+
+	<!-- MENU VALIDATION SCRIPTS -->
+
+	<test name="Validate Menus For Site Admin and Super User"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.ValidateMenusForSiteAdminAndSuperUser" />
+		</classes>
+	</test>
+
+	<test name="Validate Menus For DHA Users" preserve-order="true"
+		enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.ValidateMenusForDHAUsers" />
+		</classes>
+	</test>
+
+	<test name="Validate Menus For User" preserve-order="true"
+		enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.ValidateMenusForUser" />
+		</classes>
+	</test>
+
+
+
+	<test
+		name="Validate a new simulation that populates all tabs after creation"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<parameter name="userName"
+			value="scott_DHA_system_admin@mail.mil" />
+		<parameter name="simulationDataMapID"
+			value="CreateNewAllTabs" />
+		<parameter name="validateFieldErrors" value="true" />
+		<classes>
+			<class name="testCases.ValidateNewSimulationAfterCreation" />
+		</classes>
+	</test>
+
+
+
+	<!-- PASSWORD SCRIPTS -->
+
+	<test name="Validate Password Changes and complexity enforcement"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.ChangePasswordAndEnforceComplexity" />
+		</classes>
+	</test>
+
+	<test name="Forgot Password Workflow" preserve-order="true"
+		enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.ForgotPassword" />
+		</classes>
+	</test>
+
+
+
+
+	<!-- PROFILE SCRIPTS -->
+
+	<test name="Validate User Profile Edits Successful"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.EditUserProfile" />
+		</classes>
+	</test>
+
+
+
+	<!-- LOGIN / AUTHENICATION SCRIPTS -->
+
+	<test name="Validate Errors on Login Page" preserve-order="true"
+		enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.ValidateErrorLoginTypes" />
+		</classes>
+	</test>
+
+
+
+
+	<!-- ADMIN MENU RELATED SCRIPTS -->
+
+	<test name="Admin - Users and Roles - Search and Edit"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.Admin.UsersAndRolesSearchAndVerify" />
+		</classes>
+	</test>
+
+	<test name="Admin - Locked Accounts - Lock and Unlock"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.Admin.LockedAccountsLockAndUnlock" />
+		</classes>
+	</test>
+
+	<test name="Admin - Sites - Add/Edit/Delete" preserve-order="true"
+		enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.Admin.SitesAddEditDelete" />
+		</classes>
+	</test>
+
+	<test name="Admin - Equipment Category - Add/Edit/Delete"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.Admin.EquipmentCategoryAddEditDelete" />
+		</classes>
+	</test>
+
+	<!-- ADMIN MENU RELATED SCRIPTS *** SIMULATION -->
+
+	<test name="Admin - Simulation - Service Role - Add/Edit/Delete"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.Admin.Simulation.ServiceRoleAddEditDelete" />
+		</classes>
+	</test>
+
+	<test
+		name="Admin - Simulation - Training Type - Add/Edit/Delete/ErrorCheck"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.Admin.Simulation.TrainingTypeAddEditDelete" />
+		</classes>
+	</test>
+
+	<test
+		name="Admin - Simulation - Learner Profile - Add/Edit/Delete/ErrorCheck"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.Admin.Simulation.LearnerProfileAddEditDelete" />
+		</classes>
+	</test>
+
+	<test
+		name="Admin - Simulation - Personnel - Add/Edit/Delete/ErrorCheck"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.Admin.Simulation.PersonnelAddEditDelete" />
+		</classes>
+	</test>
+
+	<test
+		name="Admin - Simulation - Simulator Programming Platform - Add/Edit/Delete/ErrorCheck"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.Admin.Simulation.SimulatorProgrammingPlatformAddEditDelete" />
+		</classes>
+	</test>
+
+	<test
+		name="Admin - Simulation - Simulator Software Version/OS - Add/Edit/Delete/ErrorCheck"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.Admin.Simulation.SimulatorSoftwareVersionOSAddEditDelete" />
+		</classes>
+	</test>
+
+	<test
+		name="Admin - Simulation - Initial Physiologic Parameters Template - Add/Edit/Delete/ErrorCheck"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.Admin.Simulation.InitialPhysiologicParametersTemplateAddEditDelete" />
+		</classes>
+	</test>
+
+	<test
+		name="Admin - Simulation - Node Type - Add/Edit/Delete/ErrorCheck"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.Admin.Simulation.NodeTypeAddEditDelete" />
+		</classes>
+	</test>
+
+	<test
+		name="Admin - Simulation - Node Connector - Add/Edit/Delete/ErrorCheck"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.Admin.Simulation.NodeConnectorAddEditDelete" />
+		</classes>
+	</test>
+
+	<!-- The script testCases.Admin.Content.ContentAddEditDelete needs to be 
+		added here when it is stable enough to add a record -->
+
+	<test
+		name="Admin - Content - Content Type - Add/Edit/Delete/ErrorCheck"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.Admin.Content.ContentTypeAddEditDelete" />
+		</classes>
+	</test>
+
+	<test
+		name="Admin - Metadata - Metadata - Add/Edit/Delete/ErrorCheck"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class name="testCases.Admin.Metadata.MetadataAddEditDelete" />
+		</classes>
+	</test>
+
+	<test
+		name="Admin - Metadata - Metadata Category - Add/Edit/Delete/ErrorCheck"
+		preserve-order="true" enabled="true" group-by-instances="true">
+		<classes>
+			<class
+				name="testCases.Admin.Metadata.MetadataCategoryAddEditDelete" />
+		</classes>
+	</test>
+
+</suite>

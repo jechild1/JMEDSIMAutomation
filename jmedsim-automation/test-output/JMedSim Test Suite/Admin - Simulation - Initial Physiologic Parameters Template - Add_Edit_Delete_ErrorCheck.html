@@ -1,0 +1,264 @@
+<html>
+<head>
+<title>TestNG:  Admin - Simulation - Initial Physiologic Parameters Template - Add/Edit/Delete/ErrorCheck</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Admin - Simulation - Initial Physiologic Parameters Template - Add/Edit/Delete/ErrorCheck</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 07 08:21:38 EST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>56 seconds (56331 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.Admin.Simulation.InitialPhysiologicParametersTemplateAddEditDelete.execute()'><b>execute</b><br>Test class: testCases.Admin.Simulation.InitialPhysiologicParametersTemplateAddEditDelete<br>Parameters: scott_DHA_super_user@mail.mil<br/>
+<a href="#Output-1010927755" onClick='toggleBox("Output-1010927755", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1010927755" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1010927755">
+<br><br/>
+<b>Class: <u>modularScripts.LoginMod</u></b><br/>
+<br><br/>
+Method: execute<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Validating Login Page Title<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Log in<br/>
+<br><br/>
+Method: clickOkInDODBanner<br/>
+<br/>
+Method: setEmail<br/>
+<br/>
+Method: setPassword<br/>
+<br/>
+Method: clickLogin<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+Writing value '2019/11/07 08.21.48' to worksheet 'Name: /xl/worksheets/sheet1.xml - Content Type: application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml' in column index '8'...<br/>
+Excel file updated<br/>
+Waiting for page to load completely...<br/>
+The page 'JMedSIM - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: clickInitialPhysiologicParametersTemplateInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Initial Physiologic Parameters Template - JMedSim' is fully loaded now.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Initial Physiologic Parameters Template - JMedSim' is fully loaded now.<br/>
+<br/>
+Beginning link click for row Initial Physiologic Parameters Template Name and link title Details.<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Link Details clicked for row Initial Physiologic Parameters Template Name.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Initial Physiologic Parameters Template Details - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readTemplateName<br/>
+<br/>
+Method: readActualFileName<br/>
+<br/>
+Method: readDescription<br/>
+<br/>
+Method: isActiveChecked<br/>
+<br/>
+Method: readContentType<br/>
+<br/>
+Method: clickEdit<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Edit Initial Physiologic Parameters Template - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readTemplateFileName<br/>
+<br/>
+Method: readActualFileName<br/>
+<br/>
+Method: readDescription<br/>
+<br/>
+Method: isActiveChecked<br/>
+<br/>
+Method: setTemplateFileName<br/>
+<br/>
+Method: setDescription<br/>
+<br/>
+Method: setActiveCheckbox<br/>
+<br/>
+Method: clickSave<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Initial Physiologic Parameters Template - JMedSim' is fully loaded now.<br/>
+<br/>
+Beginning read for column 'Template Name' where primary column header is 'Template Name' and primary column value is 'Temporary IPPT Name' on page No Pagination Table.<br/>
+Beginning link click for row Temporary IPPT Name and link title Delete.<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Link Delete clicked for row Temporary IPPT Name.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Delete Initial Physiologic Parameters Template - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readTemplateName<br/>
+<br/>
+Method: readActualFileName<br/>
+<br/>
+Method: readDescription<br/>
+<br/>
+Method: isActiveChecked<br/>
+<br/>
+Method: readContentType<br/>
+<br/>
+Method: clickDelete<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Initial Physiologic Parameters Template - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: clickCreateInitialPhysiologicParametersTemplate<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Create Initial Physiologic Parameters Template - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: setTemplateName<br/>
+<br/>
+Method: setDescription<br/>
+<br/>
+Method: clickCreate<br/>
+<br/>
+Method: readTemplateFileNameErrorMessage<br/>
+<br/>
+Method: setTemplateName<br/>
+<br/>
+Method: setDescription<br/>
+<br/>
+Method: clickCreate<br/>
+<br/>
+Method: readDescriptionErrorMessage<br/>
+<br/>
+Method: clearTemplateFileName<br/>
+<br/>
+Method: clearDescription<br/>
+<br/>
+Method: clickCreate<br/>
+<br/>
+Method: readTemplateFileNameErrorMessage<br/>
+<br/>
+Method: readDescriptionErrorMessage<br/>
+<br/>
+Method: clearTemplateFileName<br/>
+<br/>
+Method: clearDescription<br/>
+<br/>
+Method: setTemplateName<br/>
+<br/>
+Method: setDescription<br/>
+<br/>
+Method: setActiveCheckbox<br/>
+<br/>
+Method: clickCreate<br/>
+<br/>
+Method: readSelectedFileErrorMessage<br/>
+<br/>
+Method: clearTemplateFileName<br/>
+<br/>
+Method: clearDescription<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Create Initial Physiologic Parameters Template - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: setTemplateName<br/>
+<br/>
+Method: selectFile<br/>
+<br/>
+Method: setDescription<br/>
+<br/>
+Method: setActiveCheckbox<br/>
+<br/>
+Method: clickCreate<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Initial Physiologic Parameters Template - JMedSim' is fully loaded now.<br/>
+<br/>
+Beginning isRowInTable search for .*Initial Physiologic Parameters Template Name Initial Physiologic Parameters Template Description.*.<br/>
+Table search completed for .*Initial Physiologic Parameters Template Name Initial Physiologic Parameters Template Description.* and Row Found = true after searching through 0pages.<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>55</td>
+<td>testCases.Admin.Simulation.InitialPhysiologicParametersTemplateAddEditDelete@236e3f4e</td></tr>
+</table><p>
+</body>
+</html>

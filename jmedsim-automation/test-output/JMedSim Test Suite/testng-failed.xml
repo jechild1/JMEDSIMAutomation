@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [JMedSim Test Suite]" parallel="classes">
+  <parameter name="selectedBrowser" value="firefox"/>
+  <listeners>
+    <listener class-name="configuration.EnhancedHTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Validate Menus For Site Admin and Super User(failed)" parallel="classes">
+    <classes>
+      <class name="testCases.ValidateMenusForSiteAdminAndSuperUser">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="test" invocation-numbers="0 1"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testCases.ValidateMenusForSiteAdminAndSuperUser -->
+    </classes>
+  </test> <!-- Validate Menus For Site Admin and Super User(failed) -->
+  <test name="Validate Menus For DHA Users(failed)" parallel="classes">
+    <classes>
+      <class name="testCases.ValidateMenusForDHAUsers">
+        <methods>
+          <include name="test" invocation-numbers="0 1"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testCases.ValidateMenusForDHAUsers -->
+    </classes>
+  </test> <!-- Validate Menus For DHA Users(failed) -->
+  <test name="Validate Menus For User(failed)" parallel="classes">
+    <classes>
+      <class name="testCases.ValidateMenusForUser">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="userRoleMenuTest" invocation-numbers="0"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testCases.ValidateMenusForUser -->
+    </classes>
+  </test> <!-- Validate Menus For User(failed) -->
+  <test name="Validate a new simulation that populates all tabs after creation(failed)" parallel="classes">
+    <parameter name="simulationDataMapID" value="CreateNewAllTabs"/>
+    <parameter name="userName" value="scott_DHA_system_admin@mail.mil"/>
+    <parameter name="validateFieldErrors" value="true"/>
+    <classes>
+      <class name="testCases.ValidateNewSimulationAfterCreation">
+        <methods>
+          <include name="execute" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testCases.ValidateNewSimulationAfterCreation -->
+    </classes>
+  </test> <!-- Validate a new simulation that populates all tabs after creation(failed) -->
+  <test name="Forgot Password Workflow(failed)" parallel="classes">
+    <classes>
+      <class name="testCases.ForgotPassword">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="performPasswordReset" invocation-numbers="0"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testCases.ForgotPassword -->
+    </classes>
+  </test> <!-- Forgot Password Workflow(failed) -->
+  <test name="Admin - Locked Accounts - Lock and Unlock(failed)" parallel="classes">
+    <classes>
+      <class name="testCases.Admin.LockedAccountsLockAndUnlock">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="execute"/>
+        </methods>
+      </class> <!-- testCases.Admin.LockedAccountsLockAndUnlock -->
+    </classes>
+  </test> <!-- Admin - Locked Accounts - Lock and Unlock(failed) -->
+  <test name="Admin - Sites - Add/Edit/Delete(failed)" parallel="classes">
+    <classes>
+      <class name="testCases.Admin.SitesAddEditDelete">
+        <methods>
+          <include name="performSiteAddEditDelete"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testCases.Admin.SitesAddEditDelete -->
+    </classes>
+  </test> <!-- Admin - Sites - Add/Edit/Delete(failed) -->
+  <test name="Admin - Equipment Category - Add/Edit/Delete(failed)" parallel="classes">
+    <classes>
+      <class name="testCases.Admin.EquipmentCategoryAddEditDelete">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="execute" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testCases.Admin.EquipmentCategoryAddEditDelete -->
+    </classes>
+  </test> <!-- Admin - Equipment Category - Add/Edit/Delete(failed) -->
+  <test name="Admin - Simulation - Personnel - Add/Edit/Delete/ErrorCheck(failed)" parallel="classes">
+    <classes>
+      <class name="testCases.Admin.Simulation.PersonnelAddEditDelete">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="execute" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testCases.Admin.Simulation.PersonnelAddEditDelete -->
+    </classes>
+  </test> <!-- Admin - Simulation - Personnel - Add/Edit/Delete/ErrorCheck(failed) -->
+  <test name="Admin - Simulation - Simulator Programming Platform - Add/Edit/Delete/ErrorCheck(failed)" parallel="classes">
+    <classes>
+      <class name="testCases.Admin.Simulation.SimulatorProgrammingPlatformAddEditDelete">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="execute" invocation-numbers="0"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testCases.Admin.Simulation.SimulatorProgrammingPlatformAddEditDelete -->
+    </classes>
+  </test> <!-- Admin - Simulation - Simulator Programming Platform - Add/Edit/Delete/ErrorCheck(failed) -->
+  <test name="Admin - Simulation - Node Connector - Add/Edit/Delete/ErrorCheck(failed)" parallel="classes">
+    <classes>
+      <class name="testCases.Admin.Simulation.NodeConnectorAddEditDelete">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="execute" invocation-numbers="0"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testCases.Admin.Simulation.NodeConnectorAddEditDelete -->
+    </classes>
+  </test> <!-- Admin - Simulation - Node Connector - Add/Edit/Delete/ErrorCheck(failed) -->
+  <test name="Admin - Metadata - Metadata - Add/Edit/Delete/ErrorCheck(failed)" parallel="classes">
+    <classes>
+      <class name="testCases.Admin.Metadata.MetadataAddEditDelete">
+        <methods>
+          <include name="execute" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testCases.Admin.Metadata.MetadataAddEditDelete -->
+    </classes>
+  </test> <!-- Admin - Metadata - Metadata - Add/Edit/Delete/ErrorCheck(failed) -->
+  <test name="Admin - Metadata - Metadata Category - Add/Edit/Delete/ErrorCheck(failed)" parallel="classes">
+    <classes>
+      <class name="testCases.Admin.Metadata.MetadataCategoryAddEditDelete">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="execute" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testCases.Admin.Metadata.MetadataCategoryAddEditDelete -->
+    </classes>
+  </test> <!-- Admin - Metadata - Metadata Category - Add/Edit/Delete/ErrorCheck(failed) -->
+</suite> <!-- Failed suite [JMedSim Test Suite] -->

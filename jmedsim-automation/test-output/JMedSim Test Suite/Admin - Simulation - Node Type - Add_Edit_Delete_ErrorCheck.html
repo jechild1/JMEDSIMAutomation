@@ -1,0 +1,269 @@
+<html>
+<head>
+<title>TestNG:  Admin - Simulation - Node Type - Add/Edit/Delete/ErrorCheck</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Admin - Simulation - Node Type - Add/Edit/Delete/ErrorCheck</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 07 08:22:34 EST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>80 seconds (80270 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.Admin.Simulation.NodeTypeAddEditDelete.execute()'><b>execute</b><br>Test class: testCases.Admin.Simulation.NodeTypeAddEditDelete<br>Parameters: scott_DHA_system_admin@mail.mil<br/>
+<a href="#Output-1557093716" onClick='toggleBox("Output-1557093716", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1557093716" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1557093716">
+<br><br/>
+<b>Class: <u>modularScripts.LoginMod</u></b><br/>
+<br><br/>
+Method: execute<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Validating Login Page Title<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Log in<br/>
+<br><br/>
+Method: clickOkInDODBanner<br/>
+<br/>
+Method: setEmail<br/>
+<br/>
+Method: setPassword<br/>
+<br/>
+Method: clickLogin<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+Writing value '2019/11/07 08.22.42' to worksheet 'Name: /xl/worksheets/sheet1.xml - Content Type: application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml' in column index '8'...<br/>
+Excel file updated<br/>
+Waiting for page to load completely...<br/>
+The page 'JMedSIM - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: clickNodeTypeInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Node Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: setSearchBy<br/>
+<br/>
+Method: clickSearch<br/>
+<br/>
+Beginning read for column 'Node Type' where primary column header is 'Node Type' and primary column value is 'Start' on page 1.<br/>
+Method: clearSearchBy<br/>
+<br/>
+Method: clickSearch<br/>
+<br/>
+Beginning link click for row Process and link title Details.<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Link Details clicked for row Process.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Node Type Details - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readNodeType<br/>
+<br/>
+Method: isActiveChecked<br/>
+<br/>
+Method: clickNodeTypeInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Node Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: clickCreateNewNodeType<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Create New Node Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: clearNodeType<br/>
+<br/>
+Method: setNodeType<br/>
+<br/>
+Method: readNodeTypeErrorMessage<br/>
+<br/>
+Method: clearNodeType<br/>
+<br/>
+Method: readNodeTypeErrorMessage<br/>
+<br/>
+Method: clearNodeType<br/>
+<br/>
+Method: setNodeType<br/>
+<br/>
+Method: readNodeTypeErrorMessage<br/>
+<br/>
+Method: clickBackToList<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Node Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: clickCreateNewNodeType<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Create New Node Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: setNodeType<br/>
+<br/>
+Method: setActiveCheckbox<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Node Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Beginning isRowInTable search for .*TEMP_Condition.*.<br/>
+Table search completed for .*TEMP_Condition.* and Row Found = true after searching through 0pages.<br/>
+<br/>
+Beginning link click for row TEMP_Condition and link title Edit.<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Link Edit clicked for row TEMP_Condition.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Edit Node Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readNodeType<br/>
+<br/>
+Method: isActiveChecked<br/>
+<br/>
+Method: clickBackToList<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Node Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Beginning link click for row TEMP_Condition and link title Edit.<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Link Edit clicked for row TEMP_Condition.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Edit Node Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: setNodeType<br/>
+<br/>
+Method: setActiveCheckbox<br/>
+<br/>
+Method: clickSave<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Node Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Beginning isRowInTable search for .*TEMP_Condition.*.<br/>
+Table search completed for .*TEMP_Condition.* and Row Found = true after searching through 0pages.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Node Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Beginning link click for row TEMP_Condition and link title Delete.<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Link Delete clicked for row TEMP_Condition.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Delete Node Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readNodeType<br/>
+<br/>
+Method: isActiveChecked<br/>
+<br/>
+Method: clickDelete<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Node Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Beginning isRowInTable search for .*TEMP_Condition.*.<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Table search completed for .*TEMP_Condition.* and Row Found = false after searching through 1pages.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Node Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: clickLogOffInHelloUser<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>79</td>
+<td>testCases.Admin.Simulation.NodeTypeAddEditDelete@671a5887</td></tr>
+</table><p>
+</body>
+</html>

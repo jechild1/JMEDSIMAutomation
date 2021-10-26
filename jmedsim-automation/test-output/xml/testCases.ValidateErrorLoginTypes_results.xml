@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Validate Errors on Login Page"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="36.635">
+  <properties />
+  
+  
+            <testcase name="execute" time="9.879" classname="testCases.ValidateErrorLoginTypes" />
+                <testcase name="execute" time="8.278" classname="testCases.ValidateErrorLoginTypes" />
+                <testcase name="execute" time="9.026" classname="testCases.ValidateErrorLoginTypes" />
+                <testcase name="execute" time="9.452" classname="testCases.ValidateErrorLoginTypes" />
+      
+</testsuite>

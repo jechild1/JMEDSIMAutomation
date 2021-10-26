@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Validate User Profile Edits Successful"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="42.929">
+  <properties />
+  
+  
+            <testcase name="editUserProfileAndSave" time="42.929" classname="testCases.EditUserProfile" />
+      
+</testsuite>

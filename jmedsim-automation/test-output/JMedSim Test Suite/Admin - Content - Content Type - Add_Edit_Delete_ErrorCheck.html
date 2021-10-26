@@ -1,0 +1,319 @@
+<html>
+<head>
+<title>TestNG:  Admin - Content - Content Type - Add/Edit/Delete/ErrorCheck</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Admin - Content - Content Type - Add/Edit/Delete/ErrorCheck</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 07 08:24:43 EST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>106 seconds (106148 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.Admin.Content.ContentTypeAddEditDelete.execute()'><b>execute</b><br>Test class: testCases.Admin.Content.ContentTypeAddEditDelete<br>Parameters: jesse_DHA_super_user@mail.mil<br/>
+<a href="#Output-2138912907" onClick='toggleBox("Output-2138912907", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2138912907" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2138912907">
+<br><br/>
+<b>Class: <u>modularScripts.LoginMod</u></b><br/>
+<br><br/>
+Method: execute<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+<b style='color:green;'>Validation:</b> Validating Login Page Title<br/>
+<br><br/>
+<b style='color:green;'>Matches:</b> Log in<br/>
+<br><br/>
+Method: clickOkInDODBanner<br/>
+<br/>
+Method: setEmail<br/>
+<br/>
+Method: setPassword<br/>
+<br/>
+Method: clickLogin<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+Method: readPageTitle<br/>
+<br/>
+Writing value '2019/11/07 08.24.51' to worksheet 'Name: /xl/worksheets/sheet1.xml - Content Type: application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml' in column index '8'...<br/>
+Excel file updated<br/>
+Waiting for page to load completely...<br/>
+The page 'JMedSIM - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: clickContentTypeInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Content Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: setSearchBy<br/>
+<br/>
+Method: clickSearch<br/>
+<br/>
+Beginning read for column 'Content Type' where primary column header is 'Content Type' and primary column value is 'Text' on page 1.<br/>
+Method: clearSearchBy<br/>
+<br/>
+Method: clickSearch<br/>
+<br/>
+Beginning link click for row Other and link title Details.<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Link Details clicked for row Other.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Content Type Details - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readContentType<br/>
+<br/>
+Method: isActiveChecked<br/>
+<br/>
+Method: clickContentTypeInAdmin<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Content Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: clickCreateNewContentType<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Create Content Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: clearContentType<br/>
+<br/>
+Method: setContentType<br/>
+<br/>
+Method: readContentTypeErrorMessage<br/>
+<br/>
+Method: clearContentType<br/>
+<br/>
+Method: readContentTypeErrorMessage<br/>
+<br/>
+Method: clearContentType<br/>
+<br/>
+Method: setContentType<br/>
+<br/>
+Method: readContentTypeErrorMessage<br/>
+<br/>
+Method: clickBackToList<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Content Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: clickCreateNewContentType<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Create Content Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: setContentType<br/>
+<br/>
+Method: setActiveCheckbox<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Content Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Beginning isRowInTable search for .*TEMP_Zip File.*.<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Method: clickSkipToNextNavigationLink<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Table search completed for .*TEMP_Zip File.* and Row Found = true after searching through 2pages.<br/>
+<br/>
+Beginning link click for row TEMP_Zip File and link title Edit.<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Method: clickSkipToPreviousNavigationLink<br/>
+<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Method: clickSkipToNextNavigationLink<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Link Edit clicked for row TEMP_Zip File.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Edit Content Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readContentType<br/>
+<br/>
+Method: isActiveChecked<br/>
+<br/>
+Method: clickBackToList<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Content Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Beginning link click for row TEMP_Zip File and link title Edit.<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Method: clickSkipToPreviousNavigationLink<br/>
+<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Method: clickSkipToNextNavigationLink<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Link Edit clicked for row TEMP_Zip File.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Edit Content Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: setContentType<br/>
+<br/>
+Method: setActiveCheckbox<br/>
+<br/>
+Method: clickSave<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Content Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Beginning isRowInTable search for .*TEMP_Zip File.*.<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Method: clickSkipToNextNavigationLink<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Table search completed for .*TEMP_Zip File.* and Row Found = true after searching through 2pages.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Content Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Beginning link click for row TEMP_Zip File and link title Delete.<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Method: clickSkipToPreviousNavigationLink<br/>
+<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Method: clickSkipToNextNavigationLink<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Link Delete clicked for row TEMP_Zip File.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Delete Content Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: readContentType<br/>
+<br/>
+Method: isActiveChecked<br/>
+<br/>
+Method: clickDelete<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Content Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Beginning isRowInTable search for .*TEMP_Zip File.*.<br/>
+Method: isSkipToPreviousNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Method: isSkipToNextNavigationPresent<br/>
+<br/>
+Table search completed for .*TEMP_Zip File.* and Row Found = false after searching through 1pages.<br/>
+<br/>
+Waiting for page to load completely...<br/>
+The page 'Content Type - JMedSim' is fully loaded now.<br/>
+<br/>
+Method: clickLogOffInHelloUser<br/>
+<br/>
+</div>
+</td>
+<td></td>
+<td>105</td>
+<td>testCases.Admin.Content.ContentTypeAddEditDelete@78ffe6dc</td></tr>
+</table><p>
+</body>
+</html>
