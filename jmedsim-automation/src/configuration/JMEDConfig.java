@@ -7,7 +7,7 @@ import utilities.ExcelDataConfig;
  * 
  * Extends TestConfig
  * 
- * @author scott.brazelton
+ * @author jesse.childress
  *
  */
 public abstract class JMEDConfig extends TestConfig {
