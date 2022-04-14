@@ -52,7 +52,7 @@ public class CreateAuditLogPageFactoryTest extends TestBase {
 	
 	create.clickCreate();
 	
-	AutomationHelper.wait(15);
+	AutomationHelper.waitSeconds(15);
 	
 	
 	

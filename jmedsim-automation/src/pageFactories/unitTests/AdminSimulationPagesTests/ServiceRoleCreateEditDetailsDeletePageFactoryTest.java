@@ -97,6 +97,6 @@ public class ServiceRoleCreateEditDetailsDeletePageFactoryTest
 
 		dsr.clickDelete();
 
-		AutomationHelper.wait(10);
+		AutomationHelper.waitSeconds(10);
 	}
 }

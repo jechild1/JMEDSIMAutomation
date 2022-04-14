@@ -96,7 +96,7 @@ public class SimulatorCreateEditDetailsDeletePageFactoryTest extends TestBase {
 
 		ds.clickDelete();
 
-		AutomationHelper.wait(10);
+		AutomationHelper.waitSeconds(10);
 
 	}
 }

@@ -47,6 +47,6 @@ public class UserSitesCreateEditDetailsDeletePageFactoryTest extends TestBase {
 
 		usd.clickBackToList();
 
-		AutomationHelper.wait(10);
+		AutomationHelper.waitSeconds(10);
 	}
 }

@@ -102,7 +102,7 @@ public class ChangePasswordAndEnforceComplexity extends BaseTestScriptConfig   {
 		Reporter.log("The current password field is required.", true);
 		Reporter.log("The New password field is required.", true);
 		//Pause a moment to ensure error has time to fire
-		AutomationHelper.wait(1);
+		AutomationHelper.waitSeconds(1);
 		assertEquals(changePassword.readSummaryErrors(), errorFile.getData(errorFile.getRowIndex("TestDataID", "HMMACP_BothFieldsRequired"), contentColIndex), "Current password field is required & New password field is required");
 		
 		//***Attempt NO current password***
@@ -111,7 +111,7 @@ public class ChangePasswordAndEnforceComplexity extends BaseTestScriptConfig   {
 		changePassword.clickChangePassword();
 		Reporter.log("Checking Current password field is required.", true);
 		//Pause a moment to ensure error has time to fire
-		AutomationHelper.wait(1);
+		AutomationHelper.waitSeconds(1);
 		assertEquals(changePassword.readSummaryErrors(), errorFile.getData(errorFile.getRowIndex("TestDataID", "HMMACP_CurrentPasswordRequired"), contentColIndex), "Current password field is required");
 
 		//***Attempt No new password***
@@ -121,7 +121,7 @@ public class ChangePasswordAndEnforceComplexity extends BaseTestScriptConfig   {
 		changePassword.clickChangePassword();
 		Reporter.log("Checking New password field is required.", true);
 		//Pause a moment to ensure error has time to fire
-		AutomationHelper.wait(1);
+		AutomationHelper.waitSeconds(1);
 		assertEquals(changePassword.readSummaryErrors(), errorFile.getData(errorFile.getRowIndex("TestDataID", "HMMACP_NewPasswordRequired"), contentColIndex), "New password field is required");
 
 		//***Attempt both no new and no current password***
@@ -130,7 +130,7 @@ public class ChangePasswordAndEnforceComplexity extends BaseTestScriptConfig   {
 		changePassword.clickChangePassword();
 		Reporter.log("Checking both no new and no current password.", true);
 		//Pause a moment to ensure error has time to fire
-		AutomationHelper.wait(1);
+		AutomationHelper.waitSeconds(1);
 		assertEquals(changePassword.readSummaryErrors(), errorFile.getData(errorFile.getRowIndex("TestDataID", "HMMACP_CurrentAndNewPasswordRequired"), contentColIndex), "Current Password & New Password required, New and confirmation passwords don't match");
 
 		//***Attempt bad password confirmation***
@@ -141,7 +141,7 @@ public class ChangePasswordAndEnforceComplexity extends BaseTestScriptConfig   {
 		changePassword.clickChangePassword();
 		Reporter.log("Checking incorrect password confirmation", true);
 		//Pause a moment to ensure error has time to fire
-		AutomationHelper.wait(1);
+		AutomationHelper.waitSeconds(1);
 		assertEquals(changePassword.readSummaryErrors(), errorFile.getData(errorFile.getRowIndex("TestDataID", "HMMACP_NewAndConfirmationPasswordsNotMatch"), contentColIndex), "New Password and Confirmation passwords don't match");
 
 		
@@ -154,7 +154,7 @@ public class ChangePasswordAndEnforceComplexity extends BaseTestScriptConfig   {
 		changePassword.clickChangePassword();
 		Reporter.log("Checking password length too short", true);
 		//Pause a moment to ensure error has time to fire
-		AutomationHelper.wait(1);
+		AutomationHelper.waitSeconds(1);
 		assertEquals(changePassword.readSummaryErrors(), errorFile.getData(errorFile.getRowIndex("TestDataID", "HMMACP_PasswordTooShort"), contentColIndex), "New Password too short.");
 
 		
@@ -187,7 +187,7 @@ public class ChangePasswordAndEnforceComplexity extends BaseTestScriptConfig   {
 		changePassword.clickChangePassword();
 		Reporter.log("Checking password with no lower case.", true);
 		//Pause a moment to ensure error has time to fire
-		AutomationHelper.wait(1);
+		AutomationHelper.waitSeconds(1);
 		assertEquals(changePassword.readSummaryErrors(), errorFile.getData(errorFile.getRowIndex("TestDataID", "HMMACP_PasswordNoLowercase"), contentColIndex), "New password needs lower case.");
 
 		//***Attempt a password with no upper case***
@@ -200,7 +200,7 @@ public class ChangePasswordAndEnforceComplexity extends BaseTestScriptConfig   {
 		changePassword.clickChangePassword();
 		Reporter.log("Checking password with no upper case.", true);
 		//Pause a moment to ensure error has time to fire
-		AutomationHelper.wait(1);
+		AutomationHelper.waitSeconds(1);
 		assertEquals(changePassword.readSummaryErrors(), errorFile.getData(errorFile.getRowIndex("TestDataID", "HMMACP_PasswordNoUppercase"), contentColIndex), "New Password needs upper case.");
 		
 		//***Attempt a password with no numbers***
@@ -213,7 +213,7 @@ public class ChangePasswordAndEnforceComplexity extends BaseTestScriptConfig   {
 		changePassword.clickChangePassword();
 		Reporter.log("Checking password with no numbers.", true);
 		//Pause a moment to ensure error has time to fire
-		AutomationHelper.wait(1);
+		AutomationHelper.waitSeconds(1);
 		assertEquals(changePassword.readSummaryErrors(), errorFile.getData(errorFile.getRowIndex("TestDataID", "HMMACP_PasswordNoNumbers"), contentColIndex), "New Password no numbers.");
 		
 		//***Attempt a password with no special characters***
@@ -226,7 +226,7 @@ public class ChangePasswordAndEnforceComplexity extends BaseTestScriptConfig   {
 		changePassword.clickChangePassword();
 		Reporter.log("Checking password with no special characters.", true);
 		//Pause a moment to ensure error has time to fire
-		AutomationHelper.wait(1);
+		AutomationHelper.waitSeconds(1);
 		assertEquals(changePassword.readSummaryErrors(), errorFile.getData(errorFile.getRowIndex("TestDataID", "HMMACP_PasswordNoSpecialCharacters"), contentColIndex), "New Password no special characters.");
 		
 	

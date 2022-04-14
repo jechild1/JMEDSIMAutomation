@@ -152,7 +152,7 @@ public class InitialPhysiologicParametersTemplateAddEditDelete extends BaseTestS
 		//Set too many characters
 		createIppt.setTemplateName(oneHundredOneChars);
 		createIppt.setDescription("Temp");
-		AutomationHelper.wait(3);
+		AutomationHelper.waitSeconds(3);
 		createIppt.clickCreate();
 		
 		//Check for the errors

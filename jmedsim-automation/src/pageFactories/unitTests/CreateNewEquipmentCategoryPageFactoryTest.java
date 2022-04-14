@@ -32,6 +32,6 @@ public class CreateNewEquipmentCategoryPageFactoryTest extends TestBase {
 		cnec.setDescription("123 test site");
 		cnec.setActiveCheckbox(false);
 
-		AutomationHelper.wait(10);
+		AutomationHelper.waitSeconds(10);
 	}
 }

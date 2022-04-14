@@ -32,6 +32,6 @@ public class EquipmentCategoryDetailsPageFactoryTest extends TestBase {
 		// ecd.clickEdit();
 		// ecd.clickBackToList();
 
-		AutomationHelper.wait(5);
+		AutomationHelper.waitSeconds(5);
 	}
 }

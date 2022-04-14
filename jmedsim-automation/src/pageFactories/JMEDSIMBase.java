@@ -213,7 +213,7 @@ public abstract class JMEDSIMBase extends JMEDConfig {
 	 */
 	public void waitForPageToLoad() {
 		while (isPageLoading()) {
-			AutomationHelper.wait(1);
+			AutomationHelper.waitSeconds(1);
 		}
 	}
 
@@ -238,9 +238,9 @@ public abstract class JMEDSIMBase extends JMEDConfig {
 	protected void waitForSavedSuccessfullyModal() {
 
 		waitForPageToLoad();
-		AutomationHelper.wait(1);
+		AutomationHelper.waitSeconds(1);
 		while (isSavedSuccessfullyModalPresent()) {
-			AutomationHelper.wait(1);
+			AutomationHelper.waitSeconds(1);
 		}
 	}
 
@@ -269,9 +269,9 @@ public abstract class JMEDSIMBase extends JMEDConfig {
 	 */
 	protected void waitForBackdropToBeRemoved() {
 		waitForPageToLoad();
-		AutomationHelper.wait(1);
+		AutomationHelper.waitSeconds(1);
 		while (isModalBackdropPresent()) {
-			AutomationHelper.wait(1);
+			AutomationHelper.waitSeconds(1);
 		}
 	}
 }

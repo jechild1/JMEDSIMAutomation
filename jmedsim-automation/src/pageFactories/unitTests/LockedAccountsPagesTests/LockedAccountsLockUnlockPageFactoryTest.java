@@ -63,6 +63,6 @@ public class LockedAccountsLockUnlockPageFactoryTest extends TestBase {
 
 		ua.clickUnlock();
 
-		AutomationHelper.wait(10);
+		AutomationHelper.waitSeconds(10);
 	}
 }

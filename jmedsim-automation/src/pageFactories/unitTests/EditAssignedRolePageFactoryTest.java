@@ -38,7 +38,7 @@ public class EditAssignedRolePageFactoryTest extends TestBase {
 		// ear.selectRole("Site Super User");
 		// ear.clickSave();
 
-		AutomationHelper.wait(10);
+		AutomationHelper.waitSeconds(10);
 	}
 
 }

@@ -32,7 +32,7 @@ public class SiteDetailsPageFactoryTest extends TestBase {
 		sdpf.clickEdit();
 		// sdpf.clickBackToList();
 
-		AutomationHelper.wait(5);
+		AutomationHelper.waitSeconds(5);
 	}
 
 }

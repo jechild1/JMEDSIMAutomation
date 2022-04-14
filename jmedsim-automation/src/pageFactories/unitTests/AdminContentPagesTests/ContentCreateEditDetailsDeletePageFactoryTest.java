@@ -130,6 +130,6 @@ public class ContentCreateEditDetailsDeletePageFactoryTest extends TestBase {
 
 		dc.clickDelete();
 
-		AutomationHelper.wait(10);
+		AutomationHelper.waitSeconds(10);
 	}
 }

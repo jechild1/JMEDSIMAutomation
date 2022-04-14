@@ -92,6 +92,6 @@ public class LearnerProfileCreateEditDetailsDeletePageFactoryTest
 
 		dlp.clickDelete();
 
-		AutomationHelper.wait(10);
+		AutomationHelper.waitSeconds(10);
 	}
 }

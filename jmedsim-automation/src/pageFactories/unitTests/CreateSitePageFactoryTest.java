@@ -40,7 +40,7 @@ public class CreateSitePageFactoryTest extends TestBase {
 		System.out.println(cspf.readZipcodeErrorMessage());
 		System.out.println(cspf.readActiveSiteErrorMessage());
 
-		AutomationHelper.wait(10);
+		AutomationHelper.waitSeconds(10);
 	}
 
 }

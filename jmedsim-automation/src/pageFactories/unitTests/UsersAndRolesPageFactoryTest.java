@@ -28,7 +28,7 @@ public class UsersAndRolesPageFactoryTest extends TestBase {
 		System.out.println(urpf.getUsersAndRolesTable().readTableRowValue(
 				"User", "scott_site_TSunshine_user@mail.mil", "Role", false));
 
-		AutomationHelper.wait(10);
+		AutomationHelper.waitSeconds(10);
 	}
 
 }

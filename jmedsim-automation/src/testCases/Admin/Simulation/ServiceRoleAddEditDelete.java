@@ -102,12 +102,12 @@ public class ServiceRoleAddEditDelete extends BaseTestScriptConfig {
 		// Too Many Characters (Code - 5 char max)
 		String serviceCodeText = "abc de";
 		newServiceRole.setServiceCode(serviceCodeText);
-		AutomationHelper.wait(1);
+		AutomationHelper.waitSeconds(1);
 
 		// Too Many Characters (Role - 50 char max)
 		String serviceRoleText = "abc def ghi jkl mno pqrs tuv wxyz ABC DEF GHI JKL M";
 		newServiceRole.setServiceRole(serviceRoleText);
-		AutomationHelper.wait(1);
+		AutomationHelper.waitSeconds(1);
 
 		newServiceRole.clickCreate();
 
@@ -179,7 +179,7 @@ public class ServiceRoleAddEditDelete extends BaseTestScriptConfig {
 		newServiceRole.setServiceRole(serviceRole);
 		
 		//Wait necessary to allow javascript errors time to go away.
-		AutomationHelper.wait(1);
+		AutomationHelper.waitSeconds(1);
 		
 		newServiceRole.clickCreate();
 		

@@ -541,7 +541,7 @@ public class EditSimulationPageFactory extends ModifyBase {
 		 */
 		private boolean isModalPresent() {
 			while (currentModal.getAttribute("aria-hidden") == null) {
-				AutomationHelper.wait(1);
+				AutomationHelper.waitSeconds(1);
 			}
 
 			return currentModal.getAttribute("aria-hidden").equals("false")
@@ -557,7 +557,7 @@ public class EditSimulationPageFactory extends ModifyBase {
 			waitForPageToLoad();
 
 			while (!isModalPresent()) {
-				AutomationHelper.wait(1);
+				AutomationHelper.waitSeconds(1);
 			}
 		}
 
@@ -583,9 +583,9 @@ public class EditSimulationPageFactory extends ModifyBase {
 		protected void waitForModalLoaderToCompleteByID(String id) {
 
 			waitForPageToLoad();
-			AutomationHelper.wait(1);
+			AutomationHelper.waitSeconds(1);
 			while (isModalLoaderDisplayed(id)) {
-				AutomationHelper.wait(1);
+				AutomationHelper.waitSeconds(1);
 			}
 		}
 
@@ -809,9 +809,9 @@ public class EditSimulationPageFactory extends ModifyBase {
 			 */
 			private void waitForServiceRoleSavedSuccessfullyModal() {
 
-				AutomationHelper.wait(1);
+				AutomationHelper.waitSeconds(1);
 				while (isServiceRoleLoaderPresent()) {
-					AutomationHelper.wait(1);
+					AutomationHelper.waitSeconds(1);
 				}
 			}
 		}
@@ -1282,9 +1282,9 @@ public class EditSimulationPageFactory extends ModifyBase {
 		private void waitForSimulationOOPITabElementsModal() {
 
 			waitForPageToLoad();
-			AutomationHelper.wait(1);
+			AutomationHelper.waitSeconds(1);
 			while (!isSimulationOOPITabElementsPresent()) {
-				AutomationHelper.wait(1);
+				AutomationHelper.waitSeconds(1);
 			}
 		}
 
@@ -1841,9 +1841,9 @@ public class EditSimulationPageFactory extends ModifyBase {
 		private void waitForPrerequisitesTabElements() {
 
 			waitForPageToLoad();
-			AutomationHelper.wait(1);
+			AutomationHelper.waitSeconds(1);
 			while (!isPrerequisitesTabElementsPresent()) {
-				AutomationHelper.wait(1);
+				AutomationHelper.waitSeconds(1);
 			}
 		}
 
@@ -2210,14 +2210,14 @@ public class EditSimulationPageFactory extends ModifyBase {
 				boolean desiredStatus) {
 
 			waitForPageToLoad();
-			AutomationHelper.wait(1);
+			AutomationHelper.waitSeconds(1);
 			if (desiredStatus) {
 				while (isTabSectionElementsPresent(tabSection)) {
-					AutomationHelper.wait(1);
+					AutomationHelper.waitSeconds(1);
 				}
 			} else {
 				while (!isTabSectionElementsPresent(tabSection)) {
-					AutomationHelper.wait(1);
+					AutomationHelper.waitSeconds(1);
 				}
 			}
 		}
@@ -2770,9 +2770,9 @@ public class EditSimulationPageFactory extends ModifyBase {
 		private void waitForMedRecordsPatientDocsTabElements() {
 
 			waitForPageToLoad();
-			AutomationHelper.wait(1);
+			AutomationHelper.waitSeconds(1);
 			while (!isMedRecordsPatientDocsTabElementsPresent()) {
-				AutomationHelper.wait(1);
+				AutomationHelper.waitSeconds(1);
 			}
 		}
 
@@ -3416,9 +3416,9 @@ public class EditSimulationPageFactory extends ModifyBase {
 		private void waitForEnvironmentAndEquipmentSetupTabElements() {
 
 			waitForPageToLoad();
-			AutomationHelper.wait(1);
+			AutomationHelper.waitSeconds(1);
 			while (!isEnvironmentAndEquipmentSetupTabElementsPresent()) {
-				AutomationHelper.wait(1);
+				AutomationHelper.waitSeconds(1);
 			}
 		}
 
@@ -3732,14 +3732,14 @@ public class EditSimulationPageFactory extends ModifyBase {
 				boolean desiredStatus) {
 
 			waitForPageToLoad();
-			AutomationHelper.wait(1);
+			AutomationHelper.waitSeconds(1);
 			if (desiredStatus) {
 				while (isTabSectionElementsPresent(tabSection)) {
-					AutomationHelper.wait(1);
+					AutomationHelper.waitSeconds(1);
 				}
 			} else {
 				while (!isTabSectionElementsPresent(tabSection)) {
-					AutomationHelper.wait(1);
+					AutomationHelper.waitSeconds(1);
 				}
 			}
 		}

@@ -145,7 +145,7 @@ public abstract class ModifySimulatorProgrammingPlatformBase extends ModifyBase 
 	 */
 	public String readActiveErrorMessage() {
 		//Allow a moment for the error to appear
-		AutomationHelper.wait(1);
+		AutomationHelper.waitSeconds(1);
 		AutomationHelper.printMethodName();
 		return readErrorMessageForField(activeFlagCheckbox.getAttribute("id"));
 	}

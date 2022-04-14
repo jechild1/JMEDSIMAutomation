@@ -17,51 +17,51 @@ public class HomePageFactoryTest extends TestBase {
 
 		// My Menu
 		hpf.clickSimulationInMyMenu();
-		AutomationHelper.wait(5);
+		AutomationHelper.waitSeconds(5);
 
 		// ADMIN
 		hpf.clickUsersAndRolesInAdmin();
-		AutomationHelper.wait(5);
+		AutomationHelper.waitSeconds(5);
 
 		hpf.clickSitesInAdmin();
-		AutomationHelper.wait(5);
+		AutomationHelper.waitSeconds(5);
 
 		hpf.clickEquipmentCategoryInAdmin();
-		AutomationHelper.wait(5);
+		AutomationHelper.waitSeconds(5);
 
 		hpf.clickTargetedLearnerInAdmin();
-		AutomationHelper.wait(5);
+		AutomationHelper.waitSeconds(5);
 
 		hpf.clickServiceRoleInAdmin();
-		AutomationHelper.wait(5);
+		AutomationHelper.waitSeconds(5);
 		hpf.clickTrainingTypeInAdmin();
-		AutomationHelper.wait(5);
+		AutomationHelper.waitSeconds(5);
 		hpf.clickLearnerProfileInAdmin();
-		AutomationHelper.wait(5);
+		AutomationHelper.waitSeconds(5);
 
 		hpf.clickContentInAdmin();
-		AutomationHelper.wait(5);
+		AutomationHelper.waitSeconds(5);
 		hpf.clickContentTypeInAdmin();
-		AutomationHelper.wait(5);
+		AutomationHelper.waitSeconds(5);
 
 		hpf.clickMetadataDictionaryInAdmin();
-		AutomationHelper.wait(5);
+		AutomationHelper.waitSeconds(5);
 		hpf.clickMetadataCategoryInAdmin();
-		AutomationHelper.wait(5);
+		AutomationHelper.waitSeconds(5);
 
 		hpf.clickSimulatorInAdmin();
-		AutomationHelper.wait(5);
+		AutomationHelper.waitSeconds(5);
 		hpf.clickSimulatorCategoryInAdmin();
-		AutomationHelper.wait(5);
+		AutomationHelper.waitSeconds(5);
 
 		hpf.clickProfileInHelloUser();
-		AutomationHelper.wait(5);
+		AutomationHelper.waitSeconds(5);
 
 		hpf.clickManageAccountInHelloUser();
-		AutomationHelper.wait(5);
+		AutomationHelper.waitSeconds(5);
 
 		hpf.clickLogOffInHelloUser();
-		AutomationHelper.wait(5);
+		AutomationHelper.waitSeconds(5);
 	}
 
 }

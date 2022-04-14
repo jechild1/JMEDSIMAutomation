@@ -90,6 +90,6 @@ public class PersonnelCreateEditDetailsDeletePageFactoryTest extends TestBase {
 
 		dp.clickDelete();
 
-		AutomationHelper.wait(10);
+		AutomationHelper.waitSeconds(10);
 	}
 }

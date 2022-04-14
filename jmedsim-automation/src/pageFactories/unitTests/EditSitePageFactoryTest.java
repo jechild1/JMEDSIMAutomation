@@ -46,7 +46,7 @@ public class EditSitePageFactoryTest extends TestBase {
 		System.out.println(espf.readZipcode());
 		System.out.println(espf.isActiveSiteChecked());
 
-		AutomationHelper.wait(10);
+		AutomationHelper.waitSeconds(10);
 	}
 
 }

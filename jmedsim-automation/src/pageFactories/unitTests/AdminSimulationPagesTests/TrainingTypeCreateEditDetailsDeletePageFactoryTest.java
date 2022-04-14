@@ -93,6 +93,6 @@ public class TrainingTypeCreateEditDetailsDeletePageFactoryTest
 
 		dtt.clickDelete();
 
-		AutomationHelper.wait(10);
+		AutomationHelper.waitSeconds(10);
 	}
 }

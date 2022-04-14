@@ -92,6 +92,6 @@ public class ContentTypeCreateEditDetailsDeletePageFactoryTest
 
 		dct.clickDelete();
 
-		AutomationHelper.wait(10);
+		AutomationHelper.waitSeconds(10);
 	}
 }

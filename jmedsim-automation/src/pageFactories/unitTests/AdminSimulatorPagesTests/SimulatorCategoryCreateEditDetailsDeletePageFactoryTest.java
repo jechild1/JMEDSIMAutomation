@@ -98,6 +98,6 @@ public class SimulatorCategoryCreateEditDetailsDeletePageFactoryTest
 
 		dsc.clickDelete();
 
-		AutomationHelper.wait(10);
+		AutomationHelper.waitSeconds(10);
 	}
 }

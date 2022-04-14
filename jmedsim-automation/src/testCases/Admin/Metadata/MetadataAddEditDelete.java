@@ -178,7 +178,7 @@ public class MetadataAddEditDelete extends BaseTestScriptConfig {
 		
 		//Ensure that the new record shows up on in the table
 		metadataIndex = new MetadataPageFactory();
-		AutomationHelper.wait(3);
+		AutomationHelper.waitSeconds(3);
 		assertEquals(metadataIndex.getMetadataTable().isRowInTable(tempMetadata, tempDescription, tempAdditionalInfo, tempMetadataCategory), true, "Edited Temporary Record Added");
 	}
 	

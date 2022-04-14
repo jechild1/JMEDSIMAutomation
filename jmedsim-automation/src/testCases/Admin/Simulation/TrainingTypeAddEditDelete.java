@@ -115,7 +115,7 @@ public class TrainingTypeAddEditDelete extends BaseTestScriptConfig {
 		createNewTrainingType.setTrainingType(fiftyOneChars);
 
 		String maxCharsError = errorFile.getData("CREATENEWTRAININGTYPE_max_chars", "Content");
-		AutomationHelper.wait(2);
+		AutomationHelper.waitSeconds(2);
 		createNewTrainingType.clickCreate();
 		assertEquals(createNewTrainingType.readTrainingTypeErrorMessage(), maxCharsError, "Create New Training Type - 50 Chars Max");
 		
@@ -128,7 +128,7 @@ public class TrainingTypeAddEditDelete extends BaseTestScriptConfig {
 		hover.moveToElement(createButton);
 		hover.build();
 		hover.perform();
-		AutomationHelper.wait(5);
+		AutomationHelper.waitSeconds(5);
 		
 		createNewTrainingType.clickCreate();
 		
